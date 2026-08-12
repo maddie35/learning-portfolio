@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Universal Design as a Baseline for Technical Writing — Maddie Reardon</title>
+<meta name="description" content="UDL and technical writing share a purpose. Mapping all three UDL principles onto documentation practice — and being honest about what it costs.">
+<meta property="og:title" content="Universal Design as a Baseline for Technical Writing — Maddie Reardon">
+<meta property="og:description" content="UDL and technical writing share a purpose. Mapping all three UDL principles onto documentation practice — and being honest about what it costs.">
+<meta property="og:type" content="article">
+<link rel="stylesheet" href="assets/styles.css"><style>body{margin:0}a{text-decoration:none}a:hover{color:var(--color-accent-700)}.mono{font-family:ui-monospace,Menlo,Consolas,monospace}.btn,.tag{white-space:nowrap}.duotone::after{opacity:.15}.essay p{font-size:17px;line-height:1.7;margin:0 0 18px;max-width:64ch;text-wrap:pretty}.essay h2{font-size:27px;margin:44px 0 16px}.essay ul{max-width:64ch;font-size:17px;line-height:1.7;padding-left:20px}.essay li{margin-bottom:12px}.essay a{color:var(--color-accent-700);text-decoration:underline;text-underline-offset:2px}</style>
+</head>
+<body>
+<div style="min-height:100vh;background:var(--color-bg);color:var(--color-text)">
+
+  <header style="border-bottom:1px solid var(--color-divider);position:sticky;top:0;background:var(--color-bg);z-index:5">
+    <div style="max-width:1120px;margin:0 auto;padding:16px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px">
+      <a href="index.html" style="display:flex;flex-direction:column;gap:2px;color:var(--color-text)">
+        <span style="font-family:var(--font-heading);font-weight:600;font-size:19px;letter-spacing:.01em;line-height:1">MADDIE REARDON</span>
+        <span class="mono" style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:color-mix(in srgb,var(--color-text) 55%,transparent)">Senior learning designer</span>
+      </a>
+      <nav style="display:flex;align-items:center;gap:22px;font-family:var(--font-heading);font-size:15px;letter-spacing:.03em;text-transform:uppercase">
+        <a href="index.html#work" style="color:var(--color-text)">Work</a>
+        <a href="writing.html" style="color:var(--color-accent-700)">Writing</a>
+        <a href="about.html" style="color:var(--color-text)">About</a>
+        <a class="btn btn-primary" href="https://linkedin.com/in/maddie-reardon" target="_blank" rel="noopener" style="letter-spacing:.04em">Get in touch</a>
+      </nav>
+    </div>
+  </header>
+
+  <article class="essay" style="max-width:1120px;margin:0 auto;padding:56px 32px 24px">
+    <p class="mono" style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--color-accent-700);margin:0 0 18px">Writing · March 14, 2024</p>
+    <h1 style="font-size:44px;line-height:1.1;margin:0 0 28px;max-width:22ch">Universal Design as a Baseline for Technical Writing</h1>
+
+    <p>With over a decade in technical writing and editing, I kept noticing that the best documentation advice I'd been given was the same advice, in different vocabulary, as the Universal Design for Learning guidelines I later studied. Both tell you to use plain language. Both tell you not to assume what your reader already knows.</p>
+
+    <p>That overlap isn't a coincidence. It follows from a shared purpose: both are trying to educate. UDL removes barriers in the learning process by ensuring equitable access and opportunity. Technical writers break complex information into language any user can act on, regardless of their technical background. Same goal, different deliverables.</p>
+
+    <p>But "they both like plain language" is where most versions of this argument stop, and it's the least interesting thing the two disciplines share. UDL has three principles, not one. Mapping all three onto documentation practice is where it stops being a nice parallel and starts changing what I actually write.</p>
+
+    <h2>Multiple means of representation</h2>
+
+    <p>This is the one technical writing already half-does. Plain language, defined terms, consistent structure — standard practice. What UDL adds is the expectation that a single representation is a barrier, not a default. The same procedure as prose, as a labeled diagram, and as a forty-second screen capture isn't redundancy. It's three different people succeeding where one previously did.</p>
+
+    <p>The prose reader is skimming for a specific step. The diagram reader needs to see how the parts relate before any step makes sense. The video reader is trying to confirm the interface actually looks like what you described. These are not the same person, and documentation that serves only the first one is making a choice it usually hasn't examined.</p>
+
+    <h2>Multiple means of action and expression</h2>
+
+    <p>This is the principle technical writing most often ignores, and the one where I've seen the largest practical difference.</p>
+
+    <p>Most software tasks have more than one path — the GUI and the CLI, the bulk import and the one-at-a-time form, the admin console and the API. Documentation tends to pick one, usually the one the writer found first or the one the product team demoed. Every reader whose situation doesn't fit that path is now doing translation work before they can start.</p>
+
+    <p>Documenting the alternate path is not a completeness exercise. It's the difference between a user who finishes and a user who files a ticket.</p>
+
+    <h2>Multiple means of engagement</h2>
+
+    <p>The hardest one to retrofit, because reference documentation is written under pressure to be terse, and engagement reads like padding to anyone reviewing for length.</p>
+
+    <p>But the question a reader brings to a page is rarely "how do I do this." It's "should I do this, and what happens to me if I get it wrong." Stripping the why out of a procedure doesn't make it more efficient; it makes it something people follow without understanding, which is how you get correctly-executed steps applied to the wrong situation. One sentence of context before the steps is usually enough.</p>
+
+    <h2>What this costs</h2>
+
+    <p>Here is the tension nobody writing about UDL and documentation seems to want to name: these two disciplines pull against each other on maintenance.</p>
+
+    <p>Technical writing prizes single-sourcing. One canonical description, referenced everywhere, updated once. Multiple means of representation directly contradicts that. Every diagram, every clip, every alternate path is another artifact that goes stale at the next release — and the video is the one nobody updates, because updating it means re-recording rather than editing a line.</p>
+
+    <p>So it's a real cost, and pretending otherwise is how these initiatives die in their second quarter. My rule is to spend the extra representation where failure is expensive or the concept is spatial: anything destructive, anything involving permissions, anything where the user has to understand a structure before acting on it. A page describing a settings toggle does not need a video. A page describing how three systems sync does.</p>
+
+    <h2>Whether it worked</h2>
+
+    <p>"Better documentation" is not a claim you can check, so it's worth deciding in advance what would count. I'd rather commit to a measure before the rewrite than argue about impressions afterward.</p>
+
+    <ul>
+      <li><strong>Ticket deflection</strong> — support volume on the specific topic, before and after. The most direct signal, and usually already being tracked by someone else.</li>
+      <li><strong>Task completion</strong> — the share of users who finish the flow the page describes, rather than the share who visit the page.</li>
+      <li><strong>Time to first success</strong> — how long from opening the doc to completing the task once. This is the one that moves most when you add the alternate path.</li>
+    </ul>
+
+    <p>Page views and time-on-page measure neither of those. A long time on a documentation page is usually a bad sign.</p>
+
+    <h2>The short version</h2>
+
+    <p>Universal design isn't a remediation pass you run over finished documentation. It's a constraint you accept at the start, which is uncomfortable, costs real maintenance hours, and produces documentation that more people can actually use. Treating it as the baseline rather than the enhancement is mostly a matter of deciding to.</p>
+
+    <h2>Further reading</h2>
+
+    <ul>
+      <li><a href="https://udlguidelines.cast.org/" target="_blank" rel="noopener">The UDL Guidelines</a> (CAST) — the primary source, organized by the three principles. Start here if you want the framework itself rather than someone's summary of it.</li>
+      <li><a href="https://www.plainlanguage.gov/guidelines/" target="_blank" rel="noopener">Federal Plain Language Guidelines</a> — the most concrete, example-driven plain language reference I know of, and useful for winning arguments because it's a citable standard.</li>
+      <li><a href="https://www.plainlanguage.gov/" target="_blank" rel="noopener">plainlanguage.gov</a> — training material and before/after rewrites, good for showing a skeptical stakeholder what the change looks like in practice.</li>
+    </ul>
+
+    <p style="margin-top:36px"><a href="writing.html">← Back to writing</a></p>
+  </article>
+
+  <footer style="border-top:1px solid var(--color-divider);margin-top:40px">
+    <div style="max-width:1120px;margin:0 auto;padding:24px 32px;display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap">
+      <p class="mono" style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:color-mix(in srgb,var(--color-text) 55%,transparent);margin:0">Maddie Reardon · Learning design portfolio</p>
+      <a class="mono" href="index.html" style="font-size:11px;letter-spacing:.1em;text-transform:uppercase">Home</a>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
