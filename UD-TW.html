@@ -40,51 +40,33 @@
 
     <p>This overlap makes sense when you consider that the goal of both UDL and technical writing is to educate. UDL removes barriers in the learning process by ensuring equitable access and opportunity. Technical writers break complex information into language any user can act on, regardless of their technical background. Same goal, different deliverables.</p>
 
-    <p>When combined, UDL and technical writing principles can produce superior technical documentation.</p>
+    <p>When combined, UDL principles can help produce superior technical documentation.</p>
 
     <h2>Multiple means of representation</h2>
 
-    <p>This is the one technical writing already half-does. Plain language, defined terms, consistent structure — standard practice. What UDL adds is the expectation that a single representation is a barrier, not a default. The same procedure as prose, as a labeled diagram, and as a forty-second screen capture isn't redundancy. It's three different people succeeding where one previously did.</p>
+    <p>This is one that technical writing already half-does. Plain language, defined terms, consistent structure is standard practice in technical writing. What UDL adds is the expectation that a single representation is a barrier, not a default. The same procedure as prose, as a labeled diagram, and as a forty-second screen capture isn't redundancy; it's three different people succeeding where one previously did.</p>
 
     <p>The prose reader is skimming for a specific step. The diagram reader needs to see how the parts relate before any step makes sense. The video reader is trying to confirm the interface actually looks like what you described. These are not the same person, and documentation that serves only the first one is making a choice it usually hasn't examined.</p>
 
     <h2>Multiple means of action and expression</h2>
 
-    <p>This is the principle technical writing most often ignores, and the one where I've seen the largest practical difference.</p>
+    <p>This is the principle that technical writing most often ignores, and the one where I've seen the largest practical difference.</p>
 
-    <p>Most software tasks have more than one path — the GUI and the CLI, the bulk import and the one-at-a-time form, the admin console and the API. Documentation tends to pick one, usually the one the writer found first or the one the product team demoed. Every reader whose situation doesn't fit that path is now doing translation work before they can start.</p>
+    <p>Most software tasks have more than one path. The GUI and the CLI, the bulk import and the one-at-a-time form, the admin console and the API. Documentation tends to pick one, usually the one the writer found first or the one the product team demoed. We do this for clarity and simplicity, but we also know that not every reader's situation will fit the happy path, forcing them to do translation work before they can start.</p>
 
-    <p>Documenting the alternate path is not a completeness exercise. It's the difference between a user who finishes and a user who files a ticket.</p>
+    <p>Finding a way to clearly document an alternate path is not a completeness exercise. It's the difference between a user who finishes and a user who files a ticket.</p>
 
     <h2>Multiple means of engagement</h2>
-
-    <p>The hardest one to retrofit, because reference documentation is written under pressure to be terse, and engagement reads like padding to anyone reviewing for length.</p>
-
-    <p>But the question a reader brings to a page is rarely "how do I do this." It's "should I do this, and what happens to me if I get it wrong." Stripping the why out of a procedure doesn't make it more efficient; it makes it something people follow without understanding, which is how you get correctly-executed steps applied to the wrong situation. One sentence of context before the steps is usually enough.</p>
-
-    <h2>What this costs</h2>
-
-    <p>Here is the tension nobody writing about UDL and documentation seems to want to name: these two disciplines pull against each other on maintenance.</p>
-
-    <p>Technical writing prizes single-sourcing. One canonical description, referenced everywhere, updated once. Multiple means of representation directly contradicts that. Every diagram, every clip, every alternate path is another artifact that goes stale at the next release — and the video is the one nobody updates, because updating it means re-recording rather than editing a line.</p>
-
-    <p>So it's a real cost, and pretending otherwise is how these initiatives die in their second quarter. My rule is to spend the extra representation where failure is expensive or the concept is spatial: anything destructive, anything involving permissions, anything where the user has to understand a structure before acting on it. A page describing a settings toggle does not need a video. A page describing how three systems sync does.</p>
-
-    <h2>Whether it worked</h2>
-
-    <p>"Better documentation" is not a claim you can check, so it's worth deciding in advance what would count. I'd rather commit to a measure before the rewrite than argue about impressions afterward.</p>
-
-    <ul>
-      <li><strong>Ticket deflection</strong> — support volume on the specific topic, before and after. The most direct signal, and usually already being tracked by someone else.</li>
-      <li><strong>Task completion</strong> — the share of users who finish the flow the page describes, rather than the share who visit the page.</li>
-      <li><strong>Time to first success</strong> — how long from opening the doc to completing the task once. This is the one that moves most when you add the alternate path.</li>
-    </ul>
-
-    <p>Page views and time-on-page measure neither of those. A long time on a documentation page is usually a bad sign.</p>
+    
+    <p>The hardest one to retrofit, because terseness gets enforced in review. Context reads as padding to anyone editing for length, so it's the first thing cut — and in traditional documentation environments, the priority is simply telling the user how, not why.</p>
+    
+    <p>That holds up as long as looking it up works every time. It stops holding up when the system changes faster than anyone can re-learn it, which is now the normal case. Understanding transfers across a version change; a memorized sequence of clicks does not.</p>
+    
+    <p>A reader arriving at a page is rarely asking only "how do I do this." They're asking: Should I do this? What happens if I get it wrong? Will I need to do this again? Stripping the why out of a procedure doesn't make it more efficient; it makes it something people follow without understanding, which is how you get correctly-executed steps applied to the wrong situation. One sentence of context before the steps is usually enough.</p>
 
     <h2>The short version</h2>
 
-    <p>Universal design isn't a remediation pass you run over finished documentation. It's a constraint you accept at the start, which is uncomfortable, costs real maintenance hours, and produces documentation that more people can actually use. Treating it as the baseline rather than the enhancement is mostly a matter of deciding to.</p>
+    <p>Universal design isn't a remediation pass you run over finished documentation. It's a constraint you accept at the start, which may cost real time and effort up front, but it also produces documentation that more people can actually use. Treating it as the baseline rather than the enhancement is mostly a matter of deciding to.</p>
 
     <h2>Further reading</h2>
 
