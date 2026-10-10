@@ -1,170 +1,162 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>Engineering onboarding at Affirm — Maddie Reardon</title>
-<meta name="description" content="Case study: building engineering onboarding from scratch for a global engineering organization.">
-<meta property="og:title" content="Engineering onboarding at Affirm — Maddie Reardon">
-<meta property="og:description" content="Case study: building engineering onboarding from scratch for a global engineering organization.">
-<meta property="og:type" content="website">
-<link rel="stylesheet" href="assets/styles.css"><style>body{margin:0}a{text-decoration:none}a:hover{color:var(--color-accent-700)}.mono{font-family:ui-monospace,Menlo,Consolas,monospace}.btn,.tag{white-space:nowrap}</style>
+<meta content="Case study: building engineering onboarding from scratch for a global engineering organization." name="description"/>
+<meta content="Engineering onboarding at Affirm — Maddie Reardon" property="og:title"/>
+<meta content="Case study: building engineering onboarding from scratch for a global engineering organization." property="og:description"/>
+<meta content="website" property="og:type"/>
+<link href="assets/styles.css" rel="stylesheet"/>
 </head>
 <body>
 <div style="min-height:100vh;background:var(--color-bg);color:var(--color-text)">
-
-  <header style="border-bottom:1px solid var(--color-divider);position:sticky;top:0;background:var(--color-bg);z-index:5">
-    <div style="max-width:1120px;margin:0 auto;padding:16px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px">
-      <a href="index.html" style="display:flex;flex-direction:column;gap:2px;color:var(--color-text)">
-        <span style="font-family:var(--font-heading);font-weight:600;font-size:19px;letter-spacing:.01em;line-height:1">MADDIE REARDON</span>
-        <span class="mono" style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:color-mix(in srgb,var(--color-text) 55%,transparent)">Senior learning designer</span>
-      </a>
-      <nav style="display:flex;align-items:center;gap:22px;font-family:var(--font-heading);font-size:15px;letter-spacing:.03em;text-transform:uppercase">
-        <a href="index.html#work" style="color:var(--color-accent-700)">Work</a>
-        <a href="writing.html" style="color:var(--color-text)">Writing</a>
-        <a href="about.html" style="color:var(--color-text)">About</a>
-        <a class="btn btn-primary" href="https://linkedin.com/in/maddie-reardon" target="_blank" rel="noopener" style="letter-spacing:.04em">Get in touch</a>
-      </nav>
-    </div>
-  </header>
-
-  <section style="max-width:1120px;margin:0 auto;padding:56px 32px 40px">
-    <p class="mono" style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--color-accent-700);margin:0 0 18px">Case study 01 · Program design</p>
-    <h1 style="font-size:54px;line-height:1.05;margin:0 0 20px;max-width:24ch">Engineering onboarding, built from scratch</h1>
-    <p style="font-size:17px;line-height:1.5;margin:-8px 0 18px;color:color-mix(in srgb,var(--color-text) 62%,transparent);max-width:52ch">One onboarding program for a global engineering organization at Affirm</p>
-    <p style="font-size:19px;line-height:1.6;max-width:62ch;margin:0;text-wrap:pretty">Engineering onboarding didn’t exist as a program. A couple of teams had built their own, and everyone else improvised. I built one program for every engineering discipline across 10+ sites and 6 countries, and measured it on the number that mattered most to the business: time to shipping code.</p>
-  </section>
-
-  <section style="max-width:1120px;margin:0 auto;padding:0 32px 56px">
-    <div class="blueprint" style="display:grid;grid-template-columns:repeat(4,1fr)">
-      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
-      <div style="padding:20px 22px;"><p class="mono" style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:color-mix(in srgb,var(--color-text) 55%,transparent);margin:0 0 6px">My role</p><p style="font-size:15px;margin:0">Program owner and learning designer: strategy, curriculum, facilitator enablement, evaluation</p></div>
-      <div style="padding:20px 22px;border-left:1px solid var(--color-divider);"><p class="mono" style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:color-mix(in srgb,var(--color-text) 55%,transparent);margin:0 0 6px">Audience</p><p style="font-size:15px;margin:0">250+ new engineers in monthly cohorts of 18 to 35, from early-career engineers to senior managers</p></div>
-      <div style="padding:20px 22px;border-left:1px solid var(--color-divider);"><p class="mono" style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:color-mix(in srgb,var(--color-text) 55%,transparent);margin:0 0 6px">Format</p><p style="font-size:15px;margin:0">Mobile-first Rise pre-learning, a pre-arrival session, and 3 days in person</p></div>
-      <div style="padding:20px 22px;border-left:1px solid var(--color-divider);"><p class="mono" style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:color-mix(in srgb,var(--color-text) 55%,transparent);margin:0 0 6px">Constraints</p><p style="font-size:15px;margin:0">Volunteer SME facilitators with day jobs, and a product that changed constantly</p></div>
-    </div>
-  </section>
-
-  <section style="max-width:1120px;margin:0 auto;padding:0 32px 56px;display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start">
-    <div>
-      <h2 style="font-size:32px;margin:0 0 16px">The problem</h2>
-      <p style="font-size:16px;line-height:1.65;margin:0 0 12px;text-wrap:pretty">A new SRE in one office and a new front-end engineer in another started with different information, different expectations, and different ideas about how the company worked.</p>
-      <p style="font-size:16px;line-height:1.65;margin:0 0 12px;text-wrap:pretty"><strong>Why it mattered:</strong> every week a new engineer spends ramping up is a week of salary before they ship. Inconsistent onboarding also meant every office taught a slightly different version of how Affirm works.</p>
-      <p style="font-size:16px;line-height:1.65;margin:0;text-wrap:pretty"><strong>The goal:</strong> one set of guidelines, one version of the messaging, and a shared foundation across every discipline, from SREs and integration engineers to front-end and sales engineering.</p>
-    </div>
-    <div>
-      <h2 style="font-size:32px;margin:0 0 16px">What analysis found</h2>
-      <ul style="margin:0;padding:0;list-style:none;display:grid;gap:14px">
-        <li style="display:grid;grid-template-columns:22px 1fr;gap:12px;align-items:start"><span class="mono" style="font-size:11px;color:var(--color-accent-700);padding-top:3px">01</span><p style="margin:0;font-size:16px;line-height:1.6">There were no internal experts on onboarding, but there were experts on every subject onboarding needed to cover. The curriculum had to come from volunteer engineers, so delivery had to work without me in the room.</p></li>
-        <li style="display:grid;grid-template-columns:22px 1fr;gap:12px;align-items:start"><span class="mono" style="font-size:11px;color:var(--color-accent-700);padding-top:3px">02</span><p style="margin:0;font-size:16px;line-height:1.6">Everyone had opinions about onboarding, including the C-suite, and most arrived as proposals for new sessions. Three days is a fixed amount of room, so the program needed a clear way to decide what belonged in it.</p></li>
-        <li style="display:grid;grid-template-columns:22px 1fr;gap:12px;align-items:start"><span class="mono" style="font-size:11px;color:var(--color-accent-700);padding-top:3px">03</span><p style="margin:0;font-size:16px;line-height:1.6">Much of the technical content depended on current product behavior, and the product changed constantly. Without a system, content would go stale between monthly cohorts.</p></li>
-      </ul>
-    </div>
-  </section>
-
-  <section style="max-width:1120px;margin:0 auto;padding:0 32px 56px">
-    <h2 style="font-size:32px;margin:0 0 8px">Key decisions and trade-offs</h2>
-    <p style="font-size:16px;line-height:1.6;margin:0 0 20px;max-width:70ch;color:color-mix(in srgb,var(--color-text) 72%,transparent)">The choices that shaped the program, and what each one cost.</p>
-    <div style="border-bottom:1px solid var(--color-divider)">
-      <div style="padding:22px 0;border-top:1px solid var(--color-divider);display:grid;grid-template-columns:260px 1fr;gap:32px">
-        <h4 style="font-size:20px;margin:0">What goes where</h4>
-        <p style="font-size:16px;line-height:1.65;margin:0;text-wrap:pretty">I sorted every request into 3 places: the 3 days in person, for what needs the room and the cohort; pre-learning, for reference material; and "not an onboarding problem," for everything else. Saying no to a senior stakeholder is easier when the alternative is specific and the reasoning is about learner capacity, not preference.</p>
-      </div>
-      <div style="padding:22px 0;border-top:1px solid var(--color-divider);display:grid;grid-template-columns:260px 1fr;gap:32px">
-        <h4 style="font-size:20px;margin:0">Repeatable over heroic</h4>
-        <p style="font-size:16px;line-height:1.65;margin:0;text-wrap:pretty">I wrote facilitator guides and readiness checks, and ran train-the-trainer sessions before each cohort. The standard was that an engineer could deliver material they hadn’t designed, consistently. The trade-off: SME capacity became the limit on how fast the program could scale.</p>
-      </div>
-      <div style="padding:22px 0;border-top:1px solid var(--color-divider);display:grid;grid-template-columns:260px 1fr;gap:32px">
-        <h4 style="font-size:20px;margin:0">Maintenance as a queue</h4>
-        <p style="font-size:16px;line-height:1.65;margin:0;text-wrap:pretty">I built a pull-request monitor in Cursor that flagged product changes affecting the curriculum. Updates became a triggered queue instead of a periodic audit, so content went stale between cohorts far less often.</p>
-      </div>
-      <div style="padding:22px 0;border-top:1px solid var(--color-divider);display:grid;grid-template-columns:260px 1fr;gap:32px">
-        <h4 style="font-size:20px;margin:0">Let the pilot decide</h4>
-        <p style="font-size:16px;line-height:1.65;margin:0;text-wrap:pretty">I sat in on every pilot session and tracked where questions clustered. When the data showed a session doing 2 jobs at once, I split it instead of defending the original design.</p>
-      </div>
-    </div>
-  </section>
-
-  <section style="max-width:1120px;margin:0 auto;padding:0 32px 56px">
-    <h2 style="font-size:32px;margin:0 0 24px">What I built</h2>
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin:0 0 32px">
-      <div class="blueprint" style="padding:22px 24px">
-        <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
-        <p class="mono" style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--color-accent-700);margin:0 0 10px">Before day 1</p>
-        <h4 style="font-size:20px;margin:0 0 8px">Pre-learning and logistics</h4>
-        <p style="font-size:14px;margin:0;line-height:1.6;color:color-mix(in srgb,var(--color-text) 72%,transparent)">Articulate Rise modules published to the LMS, designed mobile-first for people completing them while traveling to the session. A short pre-arrival session covered getting into the building, what to bring, and what the days would look like.</p>
-      </div>
-      <div class="blueprint" style="padding:22px 24px">
-        <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
-        <p class="mono" style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--color-accent-700);margin:0 0 10px">Core</p>
-        <h4 style="font-size:20px;margin:0 0 8px">3 days in person</h4>
-        <p style="font-size:14px;margin:0;line-height:1.6;color:color-mix(in srgb,var(--color-text) 72%,transparent)">Sequenced from company fundamentals through discipline-specific technical content. Evening activities were built into the program, because the cohort relationships mattered as much as the content.</p>
-      </div>
-      <div class="blueprint" style="padding:22px 24px">
-        <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
-        <p class="mono" style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--color-accent-700);margin:0 0 10px">Scale</p>
-        <h4 style="font-size:20px;margin:0 0 8px">Facilitator enablement</h4>
-        <p style="font-size:14px;margin:0;line-height:1.6;color:color-mix(in srgb,var(--color-text) 72%,transparent)">Facilitator guides, readiness checks, and train-the-trainer sessions with 12+ volunteer engineering managers and senior engineers before every cohort.</p>
-      </div>
-    </div>
-    <figure class="blueprint" style="margin:0;padding:28px 30px">
-      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
-      <figcaption class="mono" style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--color-accent-700);margin:0 0 20px">What the pilot changed</figcaption>
-      <div style="display:grid;gap:18px">
-        <div style="display:grid;grid-template-columns:112px 1fr;gap:18px;align-items:center">
-          <p class="mono" style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:color-mix(in srgb,var(--color-text) 55%,transparent);margin:0">Pilot</p>
-          <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center"><span style="border:1px solid var(--color-divider);padding:8px 14px;font-family:var(--font-heading);font-size:16px;white-space:nowrap;flex:0 0 auto">How Affirm Works: business + technology</span></div>
-        </div>
-        <div style="display:grid;grid-template-columns:112px 1fr;gap:18px;align-items:center">
-          <p class="mono" style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--color-accent-700);margin:0">Redesign</p>
-          <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center"><span style="border:1px solid var(--color-accent);padding:8px 14px;font-family:var(--font-heading);font-size:16px;white-space:nowrap;flex:0 0 auto">How Affirm Works: company and solutions</span><span class="mono" style="color:var(--color-accent-700);font-size:13px">+</span><span style="background:var(--color-accent);color:var(--color-bg);border:1px solid var(--color-accent);padding:8px 14px;font-family:var(--font-heading);font-size:16px;white-space:nowrap;flex:0 0 auto">Technical implementation and APIs</span></div>
-        </div>
-      </div>
-      <p style="font-size:14px;margin:20px 0 0;color:color-mix(in srgb,var(--color-text) 62%,transparent);max-width:78ch;text-wrap:pretty">Questions in pilot cohorts kept splitting along one seam: the session was trying to explain the business and the technology at the same time. Splitting it gave everyone shared vocabulary first, so the technical material landed on a foundation instead of competing with it.</p>
-    </figure>
-  </section>
-
-  <section style="border-top:1px solid var(--color-divider);background:color-mix(in srgb,var(--color-accent) 6%,transparent)">
-    <div style="max-width:1120px;margin:0 auto;padding:48px 32px">
-      <div style="display:flex;align-items:baseline;justify-content:space-between;gap:24px;margin:0 0 22px">
-        <h2 style="font-size:32px;margin:0">Results</h2>
-        <p class="mono" style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:color-mix(in srgb,var(--color-text) 55%,transparent);margin:0">Kirkpatrick levels 1–4</p>
-      </div>
-      <table class="table" style="width:100%">
-        <thead><tr><th style="width:120px">Level</th><th style="width:180px">What was measured</th><th>What happened</th></tr></thead>
-        <tbody>
-          <tr><td class="mono" style="font-size:12px">L1 · Reaction</td><td>Program NPS</td><td>NPS held at 99 for over a year, and the AI enablement session became the highest-rated module in the program. <span class="tag tag-accent mono" style="font-size:10px">99 NPS</span></td></tr>
-          <tr><td class="mono" style="font-size:12px">L2 · Learning</td><td>Post-training survey</td><td>Learning was measured through feedback only, with no pre- and post-assessment. That’s the first thing I’d add.</td></tr>
-          <tr><td class="mono" style="font-size:12px">L3 · Behavior</td><td>Time to shipping code</td><td>New engineers shipped code sooner: time to productivity fell 25%. <span class="tag tag-accent mono" style="font-size:10px">−25%</span></td></tr>
-          <tr><td class="mono" style="font-size:12px">L4 · Results</td><td>Consistency and demand</td><td>One onboarding program for every discipline and office. Tenured engineers and engineering leaders started opting into sessions built for new hires, which wasn’t a design goal but is a good sign the content was worth their time.</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
-
-  <section style="max-width:1120px;margin:0 auto;padding:56px 32px 64px;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start">
-    <div>
-      <h2 style="font-size:32px;margin:0 0 16px">What I’d do differently</h2>
-      <p style="font-size:16px;line-height:1.65;margin:0 0 12px;text-wrap:pretty">I’d build a knowledge check into the design. A post-training survey tells you people valued it; it doesn’t tell you what they learned.</p>
-      <p style="font-size:16px;line-height:1.65;margin:0 0 12px;text-wrap:pretty">I’d run the pre-arrival logistics session from the first cohort. Several problems in that first group were avoidable and had nothing to do with instruction.</p>
-      <p style="font-size:16px;line-height:1.65;margin:0;text-wrap:pretty">I’d certify a deeper bench of facilitators earlier. SME capacity was the constraint on scale, and a bigger bench would have made the monthly cadence less fragile.</p>
-    </div>
-    <div class="blueprint" style="padding:24px 26px">
-      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
-      <p class="mono" style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--color-accent-700);margin:0 0 12px">Tools</p>
-      <div style="display:flex;flex-wrap:wrap;gap:8px">
-        <span class="tag tag-accent">Articulate Rise</span><span class="tag tag-accent">LMS</span><span class="tag tag-accent">Cursor</span><span class="tag tag-neutral">Program design</span><span class="tag tag-neutral">Train-the-trainer</span><span class="tag tag-neutral">Facilitator guides</span><span class="tag tag-neutral">Stakeholder alignment</span>
-      </div>
-      <p style="font-size:13px;line-height:1.55;margin:16px 0 0;color:color-mix(in srgb,var(--color-text) 62%,transparent)">Affirm program materials are confidential and aren’t reproduced here.</p>
-    </div>
-  </section>
-
-  <nav style="border-top:1px solid var(--color-divider)">
-    <div style="max-width:1120px;margin:0 auto;padding:24px 32px;display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap">
-      <a class="btn btn-secondary" href="index.html#work">← All work</a>
-      <a class="btn btn-secondary" href="work-workday.html">Next: Tooling overhaul →</a>
-    </div>
-  </nav>
+<header style="border-bottom:1px solid var(--color-divider);position:sticky;top:0;background:var(--color-bg);z-index:5">
+<div class="site-header wrap" style="display:flex;align-items:center;justify-content:space-between;gap:24px;padding-top:16px;padding-bottom:16px">
+<a href="index.html" style="display:flex;flex-direction:column;gap:2px;color:var(--color-text)">
+<span style="font-family:var(--font-heading);font-weight:600;font-size:19px;letter-spacing:.01em;line-height:1">MADDIE REARDON</span>
+<span class="mono" style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:color-mix(in srgb,var(--color-text) 55%,transparent)">Senior learning designer</span>
+</a>
+<nav class="site-nav" style="display:flex;align-items:center;gap:22px;font-family:var(--font-heading);font-size:15px;letter-spacing:.03em;text-transform:uppercase">
+<a href="index.html#work" style="color:var(--color-accent-700)">Work</a>
+<a href="writing.html" style="color:var(--color-text)">Writing</a>
+<a href="about.html" style="color:var(--color-text)">About</a>
+<a class="btn btn-primary" href="https://linkedin.com/in/maddie-reardon" rel="noopener" style="letter-spacing:.04em" target="_blank">Get in touch</a>
+</nav>
+</div>
+</header>
+<section class="wrap" style="padding-top:56px;padding-bottom:40px">
+<p class="mono" style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--color-accent-700);margin:0 0 18px">Case study 01 · Program design</p>
+<h1 style="--fs:54px;line-height:1.05;margin:0 0 20px;max-width:24ch">Engineering onboarding, built from scratch</h1>
+<p style="font-size:17px;line-height:1.5;margin:-8px 0 18px;color:color-mix(in srgb,var(--color-text) 62%,transparent);max-width:52ch">One onboarding program for a global engineering organization at Affirm</p>
+<p style="font-size:19px;line-height:1.6;max-width:62ch;margin:0;text-wrap:pretty">Engineering onboarding didn’t exist as a program. A couple of teams had built their own, and everyone else improvised. I built one program for every engineering discipline across 10+ sites and 6 countries, and measured it on the number that mattered most to the business: time to shipping code.</p>
+</section>
+<section class="wrap" style="padding-bottom:56px">
+<div class="blueprint grid grid-4" style="--cols:repeat(4,1fr)">
+<i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+<div class="cell" style="--pad:20px 22px"><p class="mono" style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:color-mix(in srgb,var(--color-text) 55%,transparent);margin:0 0 6px">My role</p><p style="font-size:15px;margin:0">Program owner and learning designer: strategy, curriculum, facilitator enablement, evaluation</p></div>
+<div class="divide cell" style="--pad:20px 22px"><p class="mono" style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:color-mix(in srgb,var(--color-text) 55%,transparent);margin:0 0 6px">Audience</p><p style="font-size:15px;margin:0">250+ new engineers in monthly cohorts of 18 to 35, from early-career engineers to senior managers</p></div>
+<div class="divide cell" style="--pad:20px 22px"><p class="mono" style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:color-mix(in srgb,var(--color-text) 55%,transparent);margin:0 0 6px">Format</p><p style="font-size:15px;margin:0">Mobile-first Rise pre-learning, a pre-arrival session, and 3 days in person</p></div>
+<div class="divide cell" style="--pad:20px 22px"><p class="mono" style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:color-mix(in srgb,var(--color-text) 55%,transparent);margin:0 0 6px">Constraints</p><p style="font-size:15px;margin:0">Volunteer SME facilitators with day jobs, and a product that changed constantly</p></div>
+</div>
+</section>
+<section class="wrap grid" style="--cols:.9fr 1.1fr;--gap:56px;align-items:start;padding-bottom:56px">
+<div>
+<h2 style="--fs:32px;margin:0 0 16px">The problem</h2>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;text-wrap:pretty">A new SRE in one office and a new front-end engineer in another started with different information, different expectations, and different ideas about how the company worked.</p>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;text-wrap:pretty"><strong>Why it mattered:</strong> every week a new engineer spends ramping up is a week of salary before they ship. Inconsistent onboarding also meant every office taught a slightly different version of how Affirm works.</p>
+<p style="font-size:16px;line-height:1.65;margin:0;text-wrap:pretty"><strong>The goal:</strong> one set of guidelines, one version of the messaging, and a shared foundation across every discipline, from SREs and integration engineers to front-end and sales engineering.</p>
+</div>
+<div>
+<h2 style="--fs:32px;margin:0 0 16px">What analysis found</h2>
+<ul style="margin:0;padding:0;list-style:none;display:grid;gap:14px">
+<li style="display:grid;grid-template-columns:22px 1fr;gap:12px;align-items:start"><span class="mono" style="font-size:11px;color:var(--color-accent-700);padding-top:3px">01</span><p style="margin:0;font-size:16px;line-height:1.6">There were no internal experts on onboarding, but there were experts on every subject onboarding needed to cover. The curriculum had to come from volunteer engineers, so delivery had to work without me in the room.</p></li>
+<li style="display:grid;grid-template-columns:22px 1fr;gap:12px;align-items:start"><span class="mono" style="font-size:11px;color:var(--color-accent-700);padding-top:3px">02</span><p style="margin:0;font-size:16px;line-height:1.6">Everyone had opinions about onboarding, including the C-suite, and most arrived as proposals for new sessions. Three days is a fixed amount of room, so the program needed a clear way to decide what belonged in it.</p></li>
+<li style="display:grid;grid-template-columns:22px 1fr;gap:12px;align-items:start"><span class="mono" style="font-size:11px;color:var(--color-accent-700);padding-top:3px">03</span><p style="margin:0;font-size:16px;line-height:1.6">Much of the technical content depended on current product behavior, and the product changed constantly. Without a system, content would go stale between monthly cohorts.</p></li>
+</ul>
+</div>
+</section>
+<section class="wrap" style="padding-bottom:56px">
+<h2 style="--fs:32px;margin:0 0 8px">Key decisions and trade-offs</h2>
+<p style="font-size:16px;line-height:1.6;margin:0 0 20px;max-width:70ch;color:color-mix(in srgb,var(--color-text) 72%,transparent)">The choices that shaped the program, and what each one cost.</p>
+<div style="border-bottom:1px solid var(--color-divider)">
+<div class="grid" style="--cols:260px 1fr;--gap:32px;padding:22px 0;border-top:1px solid var(--color-divider)">
+<h4 style="font-size:20px;margin:0">What goes where</h4>
+<p style="font-size:16px;line-height:1.65;margin:0;text-wrap:pretty">I sorted every request into 3 places: the 3 days in person, for what needs the room and the cohort; pre-learning, for reference material; and "not an onboarding problem," for everything else. Saying no to a senior stakeholder is easier when the alternative is specific and the reasoning is about learner capacity, not preference.</p>
+</div>
+<div class="grid" style="--cols:260px 1fr;--gap:32px;padding:22px 0;border-top:1px solid var(--color-divider)">
+<h4 style="font-size:20px;margin:0">Repeatable over heroic</h4>
+<p style="font-size:16px;line-height:1.65;margin:0;text-wrap:pretty">I wrote facilitator guides and readiness checks, and ran train-the-trainer sessions before each cohort. The standard was that an engineer could deliver material they hadn’t designed, consistently. The trade-off: SME capacity became the limit on how fast the program could scale.</p>
+</div>
+<div class="grid" style="--cols:260px 1fr;--gap:32px;padding:22px 0;border-top:1px solid var(--color-divider)">
+<h4 style="font-size:20px;margin:0">Maintenance as a queue</h4>
+<p style="font-size:16px;line-height:1.65;margin:0;text-wrap:pretty">I built a pull-request monitor in Cursor that flagged product changes affecting the curriculum. Updates became a triggered queue instead of a periodic audit, so content went stale between cohorts far less often.</p>
+</div>
+<div class="grid" style="--cols:260px 1fr;--gap:32px;padding:22px 0;border-top:1px solid var(--color-divider)">
+<h4 style="font-size:20px;margin:0">Let the pilot decide</h4>
+<p style="font-size:16px;line-height:1.65;margin:0;text-wrap:pretty">I sat in on every pilot session and tracked where questions clustered. When the data showed a session doing 2 jobs at once, I split it instead of defending the original design.</p>
+</div>
+</div>
+</section>
+<section class="wrap" style="padding-bottom:56px">
+<h2 style="--fs:32px;margin:0 0 24px">What I built</h2>
+<div class="grid" style="--cols:repeat(3,1fr);--gap:32px;margin:0 0 32px">
+<div class="blueprint" style="padding:22px 24px">
+<i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+<p class="mono" style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--color-accent-700);margin:0 0 10px">Before day 1</p>
+<h4 style="font-size:20px;margin:0 0 8px">Pre-learning and logistics</h4>
+<p style="font-size:14px;margin:0;line-height:1.6;color:color-mix(in srgb,var(--color-text) 72%,transparent)">Articulate Rise modules published to the LMS, designed mobile-first for people completing them while traveling to the session. A short pre-arrival session covered getting into the building, what to bring, and what the days would look like.</p>
+</div>
+<div class="blueprint" style="padding:22px 24px">
+<i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+<p class="mono" style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--color-accent-700);margin:0 0 10px">Core</p>
+<h4 style="font-size:20px;margin:0 0 8px">3 days in person</h4>
+<p style="font-size:14px;margin:0;line-height:1.6;color:color-mix(in srgb,var(--color-text) 72%,transparent)">Sequenced from company fundamentals through discipline-specific technical content. Evening activities were built into the program, because the cohort relationships mattered as much as the content.</p>
+</div>
+<div class="blueprint" style="padding:22px 24px">
+<i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+<p class="mono" style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--color-accent-700);margin:0 0 10px">Scale</p>
+<h4 style="font-size:20px;margin:0 0 8px">Facilitator enablement</h4>
+<p style="font-size:14px;margin:0;line-height:1.6;color:color-mix(in srgb,var(--color-text) 72%,transparent)">Facilitator guides, readiness checks, and train-the-trainer sessions with 12+ volunteer engineering managers and senior engineers before every cohort.</p>
+</div>
+</div>
+<figure class="blueprint" style="margin:0;padding:28px 30px">
+<i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+<figcaption class="mono" style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--color-accent-700);margin:0 0 20px">What the pilot changed</figcaption>
+<div style="display:grid;gap:18px">
+<div class="grid" style="--cols:112px 1fr;--gap:18px;align-items:center">
+<p class="mono" style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:color-mix(in srgb,var(--color-text) 55%,transparent);margin:0">Pilot</p>
+<div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center"><span class="chip" style="border:1px solid var(--color-divider);padding:8px 14px;font-family:var(--font-heading);font-size:16px">How Affirm Works: business + technology</span></div>
+</div>
+<div class="grid" style="--cols:112px 1fr;--gap:18px;align-items:center">
+<p class="mono" style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--color-accent-700);margin:0">Redesign</p>
+<div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center"><span class="chip" style="border:1px solid var(--color-accent);padding:8px 14px;font-family:var(--font-heading);font-size:16px">How Affirm Works: company and solutions</span><span class="mono" style="color:var(--color-accent-700);font-size:13px">+</span><span class="chip" style="background:var(--color-accent);color:var(--color-bg);border:1px solid var(--color-accent);padding:8px 14px;font-family:var(--font-heading);font-size:16px">Technical implementation and APIs</span></div>
+</div>
+</div>
+<p style="font-size:14px;margin:20px 0 0;color:color-mix(in srgb,var(--color-text) 62%,transparent);max-width:78ch;text-wrap:pretty">Questions in pilot cohorts kept splitting along one seam: the session was trying to explain the business and the technology at the same time. Splitting it gave everyone shared vocabulary first, so the technical material landed on a foundation instead of competing with it.</p>
+</figure>
+</section>
+<section style="border-top:1px solid var(--color-divider);background:color-mix(in srgb,var(--color-accent) 6%,transparent)">
+<div class="wrap" style="padding-top:48px;padding-bottom:48px">
+<div style="display:flex;align-items:baseline;justify-content:space-between;gap:24px;margin:0 0 22px">
+<h2 style="--fs:32px;margin:0">Results</h2>
+<p class="mono" style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:color-mix(in srgb,var(--color-text) 55%,transparent);margin:0">Kirkpatrick levels 1–4</p>
+</div>
+<table class="table" style="width:100%">
+<thead><tr><th style="width:120px">Level</th><th style="width:180px">What was measured</th><th>What happened</th></tr></thead>
+<tbody>
+<tr><td class="mono" style="font-size:12px">L1 · Reaction</td><td>Program NPS</td><td>NPS held at 99 for over a year, and the AI enablement session became the highest-rated module in the program. <span class="tag tag-accent mono" style="font-size:10px">99 NPS</span></td></tr>
+<tr><td class="mono" style="font-size:12px">L2 · Learning</td><td>Post-training survey</td><td>Learning was measured through feedback only, with no pre- and post-assessment. That’s the first thing I’d add.</td></tr>
+<tr><td class="mono" style="font-size:12px">L3 · Behavior</td><td>Time to shipping code</td><td>New engineers shipped code sooner: time to productivity fell 25%. <span class="tag tag-accent mono" style="font-size:10px">−25%</span></td></tr>
+<tr><td class="mono" style="font-size:12px">L4 · Results</td><td>Consistency and demand</td><td>One onboarding program for every discipline and office. Tenured engineers and engineering leaders started opting into sessions built for new hires, which wasn’t a design goal but is a good sign the content was worth their time.</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="wrap grid" style="--cols:1fr 1fr;--gap:56px;align-items:start;padding-top:56px;padding-bottom:64px">
+<div>
+<h2 style="--fs:32px;margin:0 0 16px">What I’d do differently</h2>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;text-wrap:pretty">I’d build a knowledge check into the design. A post-training survey tells you people valued it; it doesn’t tell you what they learned.</p>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;text-wrap:pretty">I’d run the pre-arrival logistics session from the first cohort. Several problems in that first group were avoidable and had nothing to do with instruction.</p>
+<p style="font-size:16px;line-height:1.65;margin:0;text-wrap:pretty">I’d certify a deeper bench of facilitators earlier. SME capacity was the constraint on scale, and a bigger bench would have made the monthly cadence less fragile.</p>
+</div>
+<div class="blueprint" style="padding:24px 26px">
+<i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+<p class="mono" style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--color-accent-700);margin:0 0 12px">Tools</p>
+<div style="display:flex;flex-wrap:wrap;gap:8px">
+<span class="tag tag-accent">Articulate Rise</span><span class="tag tag-accent">LMS</span><span class="tag tag-accent">Cursor</span><span class="tag tag-neutral">Program design</span><span class="tag tag-neutral">Train-the-trainer</span><span class="tag tag-neutral">Facilitator guides</span><span class="tag tag-neutral">Stakeholder alignment</span>
+</div>
+<p style="font-size:13px;line-height:1.55;margin:16px 0 0;color:color-mix(in srgb,var(--color-text) 62%,transparent)">Affirm program materials are confidential and aren’t reproduced here.</p>
+</div>
+</section>
+<nav style="border-top:1px solid var(--color-divider)">
+<div class="wrap" style="display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;padding-top:24px;padding-bottom:24px">
+<a class="btn btn-secondary" href="index.html#work">← All work</a>
+<a class="btn btn-secondary" href="work-workday.html">Next: Tooling overhaul →</a>
+</div>
+</nav>
 </div>
 </body>
 </html>
