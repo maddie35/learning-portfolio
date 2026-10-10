@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Accessible Google Forms article — Maddie Reardon</title>
+<meta content="Writing sample: a published Pope Tech article on making Google Forms more accessible." name="description"/>
+<meta content="Accessible Google Forms article — Maddie Reardon" property="og:title"/>
+<meta content="Writing sample: a published Pope Tech article on making Google Forms more accessible." property="og:description"/>
+<meta content="website" property="og:type"/>
+<link href="assets/styles.css" rel="stylesheet"/>
+</head>
+<body>
+<div style="min-height:100vh;background:var(--color-bg);color:var(--color-text)">
+<header style="border-bottom:1px solid var(--color-divider);position:sticky;top:0;background:var(--color-bg);z-index:5">
+<div class="site-header wrap" style="display:flex;align-items:center;justify-content:space-between;gap:24px;padding-top:16px;padding-bottom:16px">
+<a href="index.html" style="display:flex;flex-direction:column;gap:2px;color:var(--color-text)">
+<span style="font-family:var(--font-heading);font-weight:600;font-size:19px;letter-spacing:.01em;line-height:1">MADDIE REARDON</span>
+<span class="mono" style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:color-mix(in srgb,var(--color-text) 55%,transparent)">Senior learning designer</span>
+</a>
+<nav class="site-nav" style="display:flex;align-items:center;gap:22px;font-family:var(--font-heading);font-size:15px;letter-spacing:.03em;text-transform:uppercase">
+<a href="index.html#work" style="color:var(--color-text)">Work</a>
+<a href="writing.html" style="color:var(--color-accent-700)">Writing</a>
+<a href="about.html" style="color:var(--color-text)">About</a>
+<a class="btn btn-primary" href="https://linkedin.com/in/maddie-reardon" rel="noopener" style="letter-spacing:.04em" target="_blank">Get in touch</a>
+</nav>
+</div>
+</header>
+<section class="wrap" style="padding-top:56px;padding-bottom:40px">
+<p class="mono" style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--color-accent-700);margin:0 0 18px">Writing sample · Published article</p>
+<h1 style="--fs:50px;line-height:1.06;margin:0 0 20px;max-width:24ch">How to make your Google Forms more accessible</h1>
+<p style="font-size:19px;line-height:1.6;max-width:62ch;margin:0 0 28px;text-wrap:pretty">A practical guide for people who build forms but don’t write code. I picked the topic, tested every recommendation with real assistive technology, and wrote and produced the article for the Pope Tech blog.</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap">
+<a class="btn btn-primary" href="https://blog.pope.tech/2026/10/02/how-to-make-your-google-forms-more-accessible/" rel="noopener" target="_blank">Read the article on Pope Tech ↗</a>
+<a class="btn btn-secondary" href="writing.html">← All writing</a>
+</div>
+</section>
+
+<section class="wrap" style="padding-bottom:56px">
+<div class="blueprint grid grid-4" style="--cols:repeat(4,1fr)">
+<i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+<div class="cell" style="--pad:20px 22px"><p class="mono" style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:color-mix(in srgb,var(--color-text) 55%,transparent);margin:0 0 6px">My role</p><p style="font-size:15px;margin:0">Topic, testing, writing, screenshots, videos, and example forms</p></div>
+<div class="cell divide" style="--pad:20px 22px"><p class="mono" style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:color-mix(in srgb,var(--color-text) 55%,transparent);margin:0 0 6px">Audience</p><p style="font-size:15px;margin:0">Educators, course creators, and anyone who builds Google Forms without code</p></div>
+<div class="cell divide" style="--pad:20px 22px"><p class="mono" style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:color-mix(in srgb,var(--color-text) 55%,transparent);margin:0 0 6px">Format</p><p style="font-size:15px;margin:0">About 1,800 words, 10-minute read, with screenshots, videos, code, and live forms</p></div>
+<div class="cell divide" style="--pad:20px 22px"><p class="mono" style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:color-mix(in srgb,var(--color-text) 55%,transparent);margin:0 0 6px">Published</p><p style="font-size:15px;margin:0">Pope Tech blog, October 2026</p></div>
+</div>
+</section>
+
+<section class="wrap grid" style="--cols:.9fr 1.1fr;--gap:56px;align-items:start;padding-bottom:56px">
+<div>
+<h2 style="--fs:32px;margin:0 0 16px">The brief</h2>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;text-wrap:pretty">Pope Tech publishes accessibility guidance as part of its content plan, and people regularly search for how to make the tools they already use more accessible. Google Forms is one of the most common of those tools, especially in education.</p>
+<p style="font-size:16px;line-height:1.65;margin:0;text-wrap:pretty"><strong>The goal:</strong> give readers changes they can make in their next form, in the Google Forms interface they already know, without needing to read WCAG first.</p>
+</div>
+<div>
+<h2 style="--fs:32px;margin:0 0 16px">What testing found</h2>
+<ul style="margin:0;padding:0;list-style:none;display:grid;gap:14px">
+<li style="display:grid;grid-template-columns:22px 1fr;gap:12px;align-items:start"><span class="mono" style="font-size:11px;color:var(--color-accent-700);padding-top:3px">01</span><p style="margin:0;font-size:16px;line-height:1.6">The date picker was the biggest barrier. Google Forms uses the browser’s built-in date input, so it behaves differently depending on the browser, operating system, and assistive technology. With Voice Control in Safari, results were inconsistent.</p></li>
+<li style="display:grid;grid-template-columns:22px 1fr;gap:12px;align-items:start"><span class="mono" style="font-size:11px;color:var(--color-accent-700);padding-top:3px">02</span><p style="margin:0;font-size:16px;line-height:1.6">Google Forms has no alt text field. The caption was the only place to put a text alternative for an image.</p></li>
+<li style="display:grid;grid-template-columns:22px 1fr;gap:12px;align-items:start"><span class="mono" style="font-size:11px;color:var(--color-accent-700);padding-top:3px">03</span><p style="margin:0;font-size:16px;line-height:1.6">Screen readers don’t announce images, and video titles don’t become headings. Readers have to be told about media in the question text.</p></li>
+</ul>
+</div>
+</section>
+
+<section class="wrap" style="padding-bottom:56px">
+<h2 style="--fs:32px;margin:0 0 8px">Key writing decisions</h2>
+<p style="font-size:16px;line-height:1.6;margin:0 0 20px;max-width:70ch;color:color-mix(in srgb,var(--color-text) 72%,transparent)">The choices that shaped the article, and why I made them.</p>
+<div style="border-bottom:1px solid var(--color-divider)">
+<div class="grid" style="--cols:260px 1fr;--gap:32px;padding:22px 0;border-top:1px solid var(--color-divider)">
+<h3 style="font-size:20px;margin:0">Test, don’t just cite</h3>
+<p style="font-size:16px;line-height:1.65;margin:0;text-wrap:pretty">I tested each recommendation myself instead of repeating general guidance. The videos show the date picker failing with Voice Control and a screen reader entering an embedded form with and without a title, so readers can see the barrier, not just read about it.</p>
+</div>
+<div class="grid" style="--cols:260px 1fr;--gap:32px;padding:22px 0;border-top:1px solid var(--color-divider)">
+<h3 style="font-size:20px;margin:0">Small choices, in their tool</h3>
+<p style="font-size:16px;line-height:1.65;margin:0;text-wrap:pretty">Every tip is a change inside Google Forms, with the exact menu path, such as Settings > Presentation. Readers can follow along in their own form instead of translating abstract guidance.</p>
+</div>
+<div class="grid" style="--cols:260px 1fr;--gap:32px;padding:22px 0;border-top:1px solid var(--color-divider)">
+<h3 style="font-size:20px;margin:0">Show the fix, not just the rule</h3>
+<p style="font-size:16px;line-height:1.65;margin:0;text-wrap:pretty">Before-and-after examples for link text, 2 ways to point readers to a video, and 2 live embedded forms, one too short and one sized correctly, so the double-scrollbar problem is obvious.</p>
+</div>
+<div class="grid" style="--cols:260px 1fr;--gap:32px;padding:22px 0;border-top:1px solid var(--color-divider)">
+<h3 style="font-size:20px;margin:0">Plain language over standards</h3>
+<p style="font-size:16px;line-height:1.65;margin:0;text-wrap:pretty">I gave the contrast ratios and real color examples, like #767676 passing and #999999 failing, without leading with success criteria numbers. The audience needs to make a good form, not pass an audit.</p>
+</div>
+<div class="grid" style="--cols:260px 1fr;--gap:32px;padding:22px 0;border-top:1px solid var(--color-divider)">
+<h3 style="font-size:20px;margin:0">Tell readers where to start</h3>
+<p style="font-size:16px;line-height:1.65;margin:0;text-wrap:pretty">The takeaways open with the 2 changes that matter most: captions on important images and replacing the date picker. Then the rest of the checklist follows.</p>
+</div>
+</div>
+</section>
+
+<section class="wrap" style="padding-bottom:56px">
+<figure class="blueprint" style="margin:0;padding:28px 30px">
+<i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+<figcaption class="mono" style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--color-accent-700);margin:0 0 18px">What the article covers</figcaption>
+<table class="table" style="width:100%">
+<thead><tr><th style="width:32%">Section</th><th>What readers learn to do</th></tr></thead>
+<tbody>
+<tr><td>General considerations</td><td>Keep autosave on, and offer another way to respond.</td></tr>
+<tr><td>Date fields</td><td>Swap the date picker for a text or single-select question.</td></tr>
+<tr><td>Images and media</td><td>Use the caption as alt text, and mention important images and videos in the question.</td></tr>
+<tr><td>Color contrast</td><td>Meet 4.5:1 for normal text and 3:1 for large text and meaningful graphics.</td></tr>
+<tr><td>Text</td><td>Use 12pt or larger, and write link text that says where the link goes.</td></tr>
+<tr><td>Embedding</td><td>Add an iframe title, prevent double scrollbars, and test with a keyboard.</td></tr>
+</tbody>
+</table>
+</figure>
+</section>
+
+<section class="wrap grid" style="--cols:1fr 1fr;--gap:56px;align-items:start;padding-top:8px;padding-bottom:64px">
+<div>
+<h2 style="--fs:32px;margin:0 0 16px">What I’d add next</h2>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;text-wrap:pretty">A downloadable checklist version of the takeaways, so readers can keep it next to their form while they build.</p>
+<p style="font-size:16px;line-height:1.65;margin:0;text-wrap:pretty">A short note mapping each tip to its WCAG success criterion, for readers who need to document compliance as well as fix the form.</p>
+</div>
+<div class="blueprint" style="padding:24px 26px">
+<i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+<p class="mono" style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--color-accent-700);margin:0 0 12px">Skills</p>
+<div style="display:flex;flex-wrap:wrap;gap:8px">
+<span class="tag tag-accent">Accessibility</span><span class="tag tag-accent">Technical writing</span><span class="tag tag-accent">Assistive technology testing</span><span class="tag tag-neutral">Plain language</span><span class="tag tag-neutral">Screenshots and video</span><span class="tag tag-neutral">Content strategy</span>
+</div>
+</div>
+</section>
+
+<nav style="border-top:1px solid var(--color-divider)">
+<div class="wrap" style="display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;padding-top:24px;padding-bottom:24px">
+<a class="btn btn-secondary" href="writing.html">← All writing</a>
+<a class="btn btn-secondary" href="https://blog.pope.tech/2026/10/02/how-to-make-your-google-forms-more-accessible/" rel="noopener" target="_blank">Read the article ↗</a>
+</div>
+</nav>
+</div>
+</body>
+</html>
