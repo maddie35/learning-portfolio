@@ -284,35 +284,65 @@ textarea.input { min-height: 90px; resize: vertical; }
 .btn-primary { border-color: var(--color-accent); }
 .btn-ghost { border-color: transparent; }
 
-@media (max-width: 760px) {
-  /* Stack every grid into 1 column */
-  [style*="grid-template-columns"] {
-    grid-template-columns: 1fr !important;
-    gap: 24px !important;
-  }
 
-  /* Side dividers become top dividers when stacked */
-  [style*="border-left:1px solid var(--color-divider)"] {
-    border-left: 0 !important;
-    border-top: 1px solid var(--color-divider);
-    padding-left: 0 !important;
-  }
+/* ==========================================================
+   Base (moved here from each page's <style> block)
+   ========================================================== */
+body { margin: 0; }
+a { text-decoration: none; }
+a:hover { color: var(--color-accent-700); }
+.mono { font-family: ui-monospace, Menlo, Consolas, monospace; }
+.btn, .tag { white-space: nowrap; }
 
-  /* 16px side gutters */
-  [style*="max-width:1120px"] {
-    padding-left: 16px !important;
-    padding-right: 16px !important;
-  }
+/* ==========================================================
+   Layout
+   Each grid sets its own columns and gap inline as CSS
+   variables (--cols, --gap), so these rules can change the
+   layout on small screens without !important.
+   ========================================================== */
+.wrap { max-width: 1120px; margin: 0 auto; padding-left: 32px; padding-right: 32px; box-sizing: border-box; }
+.grid { display: grid; grid-template-columns: var(--cols); gap: var(--gap, 0); }
+.cell { padding: var(--pad); }
+.divide { border-left: 1px solid var(--color-divider); }
+.chip { white-space: nowrap; flex: 0 0 auto; }
+h1[style*="--fs"], h2[style*="--fs"] { font-size: var(--fs); }
+img { max-width: 100%; height: auto; }
 
-  /* Smaller headings */
-  h1 { font-size: 36px !important; }
-  h2 { font-size: 26px !important; }
+/* Tablet: 4-column strips become 2 x 2, everything else stacks */
+@media (max-width: 900px) {
+  .grid { grid-template-columns: 1fr; gap: min(var(--gap, 0px), 28px); }
+  .grid.grid-4 { grid-template-columns: repeat(2, 1fr); }
 
-  /* Header: tighter nav, hide the button */
-  header nav { gap: 14px !important; font-size: 13px !important; }
-  header nav .btn { display: none; }
+  .grid-4 > .divide { border-left: 1px solid var(--color-divider); }
+  .grid-4 > div:nth-of-type(odd) { border-left: 0; }
+  .grid-4 > div:nth-of-type(n+3) { border-top: 1px solid var(--color-divider); }
+  .grid:not(.grid-4) > .divide { border-left: 0; border-top: 1px solid var(--color-divider); }
 
-  /* Let long labels wrap, and let tables scroll sideways */
-  [style*="white-space:nowrap"] { white-space: normal !important; }
+  .grid:not(.blueprint) > .cell { padding: 20px 16px; }
+  .grid:not(.blueprint) > .cell:nth-of-type(odd) { padding-left: 0; }
+  .grid.blueprint > .cell { padding: 18px 20px; }
+  .grid:not(.grid-4):not(.blueprint) > .cell { padding: 20px 0; }
+
+  /* Keep the portrait from filling the screen once the hero stacks */
+  .grid > figure.duotone { max-width: 360px; }
+}
+
+/* Phone */
+@media (max-width: 600px) {
+  .wrap { padding-left: 16px; padding-right: 16px; }
+
+  .grid.grid-4 { grid-template-columns: 1fr; }
+  .grid-4 > div:nth-of-type(n) { border-left: 0; }
+  .grid-4 > div:nth-of-type(n+2) { border-top: 1px solid var(--color-divider); }
+  .grid:not(.blueprint) > .cell:nth-of-type(n) { padding: 18px 0; }
+
+  h1[style*="--fs"] { font-size: min(var(--fs), 38px); }
+  h2[style*="--fs"] { font-size: min(var(--fs), 27px); }
+
+  .site-header { flex-wrap: wrap; padding-top: 12px !important; padding-bottom: 12px !important; gap: 10px !important; }
+  .site-nav { gap: 16px !important; font-size: 13px !important; }
+  .site-nav .btn { display: none; }
+
+  .chip { white-space: normal; flex: 0 1 auto; }
   .table { display: block; overflow-x: auto; }
 }
