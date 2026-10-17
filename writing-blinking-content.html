@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Blinking content remediation guide — Maddie Reardon</title>
+<meta content="Writing sample: a Pope Tech remediation guide on blinking content, with a screen reader demo." name="description"/>
+<meta content="Blinking content remediation guide — Maddie Reardon" property="og:title"/>
+<meta content="Writing sample: a Pope Tech remediation guide on blinking content, with a screen reader demo." property="og:description"/>
+<meta content="website" property="og:type"/>
+<link href="assets/styles.css" rel="stylesheet"/><style>.essay p{font-size:17px;line-height:1.7;margin:0 0 18px;max-width:66ch;text-wrap:pretty}</style>
+</head>
+<body>
+<div style="min-height:100vh;background:var(--color-bg);color:var(--color-text)">
+<header style="border-bottom:1px solid var(--color-divider);position:sticky;top:0;background:var(--color-bg);z-index:5">
+<div class="site-header wrap" style="display:flex;align-items:center;justify-content:space-between;gap:24px;padding-top:16px;padding-bottom:16px">
+<a href="index.html" style="display:flex;flex-direction:column;gap:2px;color:var(--color-text)">
+<span style="font-family:var(--font-heading);font-weight:600;font-size:19px;letter-spacing:.01em;line-height:1">MADDIE REARDON</span>
+<span class="mono" style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:color-mix(in srgb,var(--color-text) 55%,transparent)">Senior learning designer</span>
+</a>
+<nav class="site-nav" style="display:flex;align-items:center;gap:22px;font-family:var(--font-heading);font-size:15px;letter-spacing:.03em;text-transform:uppercase">
+<a href="index.html#work" style="color:var(--color-text)">Work</a>
+<a href="writing.html" style="color:var(--color-accent-700)">Writing</a>
+<a href="about.html" style="color:var(--color-text)">About</a>
+<a class="btn btn-primary" href="https://linkedin.com/in/maddie-reardon" rel="noopener" style="letter-spacing:.04em" target="_blank">Get in touch</a>
+</nav>
+</div>
+</header>
+
+<section class="wrap" style="padding-top:56px;padding-bottom:40px">
+<p class="mono" style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--color-accent-700);margin:0 0 18px">Writing sample · Remediation guide</p>
+<h1 style="--fs:50px;line-height:1.06;margin:0 0 20px;max-width:24ch">Blinking content: hearing the problem before reading the fix</h1>
+<p style="font-size:19px;line-height:1.6;max-width:62ch;margin:0 0 28px;text-wrap:pretty">A remediation guide for Pope Tech, built so readers leave understanding the principle rather than just pasting the patch. The screen reader demo makes the cost audible in about ten seconds.</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap">
+<a class="btn btn-primary" href="https://app.pope.tech/result-documentation/articles/blinking-content" rel="noopener" target="_blank">Read the guide ↗</a>
+<a class="btn btn-secondary" href="https://youtu.be/FUqZXvGIh-Q" rel="noopener" target="_blank">Watch the screen reader demo ↗</a>
+<a class="btn btn-ghost" href="writing.html" style="padding-left:0">← All writing</a>
+</div>
+</section>
+
+<section class="wrap" style="padding-bottom:56px">
+<div class="blueprint grid grid-4" style="--cols:repeat(4,1fr)">
+<i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+<div class="cell" style="--pad:20px 22px"><p class="mono" style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:color-mix(in srgb,var(--color-text) 55%,transparent);margin:0 0 6px">My role</p><p style="font-size:15px;margin:0">Wrote the guide and fully produced the screen reader demo video</p></div>
+<div class="cell divide" style="--pad:20px 22px"><p class="mono" style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:color-mix(in srgb,var(--color-text) 55%,transparent);margin:0 0 6px">Audience</p><p style="font-size:15px;margin:0">Developers and site owners fixing issues flagged by the platform</p></div>
+<div class="cell divide" style="--pad:20px 22px"><p class="mono" style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:color-mix(in srgb,var(--color-text) 55%,transparent);margin:0 0 6px">Format</p><p style="font-size:15px;margin:0">Remediation guide with a screen reader demo, 2 worked code examples, and scaffolded further reading</p></div>
+<div class="cell divide" style="--pad:20px 22px"><p class="mono" style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:color-mix(in srgb,var(--color-text) 55%,transparent);margin:0 0 6px">Standard</p><p style="font-size:15px;margin:0">WCAG 2.2 SC 2.2.2 Pause, Stop, Hide (Level A)</p></div>
+</div>
+</section>
+
+<section class="wrap grid" style="--cols:.9fr 1.1fr;--gap:56px;align-items:start;padding-bottom:56px">
+<div>
+<h2 style="--fs:32px;margin:0 0 16px">The brief</h2>
+<p style="font-size:16px;line-height:1.65;margin:0 0 12px;text-wrap:pretty">Pope Tech's platform flags accessibility issues on a customer's site. Flagging the issue is the easy part. Getting someone to fix it is harder, because most remediation docs explain what is wrong and skip why it matters.</p>
+<p style="font-size:16px;line-height:1.65;margin:0;text-wrap:pretty"><strong>The goal:</strong> write the fix so a reader can apply it in minutes, and frame it so they recognize the same problem the next time it appears in a different form.</p>
+</div>
+<div>
+<h2 style="--fs:32px;margin:0 0 16px">Who blinking content affects</h2>
+<ul style="margin:0;padding:0;list-style:none;display:grid;gap:14px">
+<li style="display:grid;grid-template-columns:22px 1fr;gap:12px;align-items:start"><span class="mono" style="font-size:11px;color:var(--color-accent-700);padding-top:3px">01</span><p style="margin:0;font-size:16px;line-height:1.6">Readers who already find static text difficult, for whom animation makes the content harder still.</p></li>
+<li style="display:grid;grid-template-columns:22px 1fr;gap:12px;align-items:start"><span class="mono" style="font-size:11px;color:var(--color-accent-700);padding-top:3px">02</span><p style="margin:0;font-size:16px;line-height:1.6">People with cognitive and neurodevelopmental disabilities, for whom movement can be overwhelming or make it very difficult to focus on the rest of the page.</p></li>
+<li style="display:grid;grid-template-columns:22px 1fr;gap:12px;align-items:start"><span class="mono" style="font-size:11px;color:var(--color-accent-700);padding-top:3px">03</span><p style="margin:0;font-size:16px;line-height:1.6">Screen reader users, who may hear the text re-announced every time it reappears. This is the one people underestimate, and the one the demo makes impossible to ignore.</p></li>
+</ul>
+</div>
+</section>
+
+<section class="wrap" style="padding-bottom:56px">
+<h2 style="--fs:32px;margin:0 0 8px">Key design decisions</h2>
+<p style="font-size:16px;line-height:1.6;margin:0 0 20px;max-width:70ch;color:color-mix(in srgb,var(--color-text) 72%,transparent)">The choices that shaped the guide, and why I made them.</p>
+<div style="border-bottom:1px solid var(--color-divider)">
+<div class="grid" style="--cols:260px 1fr;--gap:32px;padding:22px 0;border-top:1px solid var(--color-divider)">
+<h3 style="font-size:20px;margin:0">Impact before remediation</h3>
+<p style="font-size:16px;line-height:1.65;margin:0;text-wrap:pretty">The guide opens with who this affects and how, before it shows a line of code. Three distinct groups, which teaches that an accessibility issue rarely affects only one population. A reader who understands the cost is more likely to fix it than a reader handed a rule.</p>
+</div>
+<div class="grid" style="--cols:260px 1fr;--gap:32px;padding:22px 0;border-top:1px solid var(--color-divider)">
+<h3 style="font-size:20px;margin:0">Let them hear it</h3>
+<p style="font-size:16px;line-height:1.65;margin:0;text-wrap:pretty">Reading that a screen reader may re-announce the text is abstract. Hearing it loop is not. The demo does in ten seconds what a paragraph cannot, and it is the reason this guide works on people who skim.</p>
+</div>
+<div class="grid" style="--cols:260px 1fr;--gap:32px;padding:22px 0;border-top:1px solid var(--color-divider)">
+<h3 style="font-size:20px;margin:0">Easy fix first</h3>
+<p style="font-size:16px;line-height:1.65;margin:0;text-wrap:pretty">Example 1 is removal, which is the right answer most of the time and takes one deletion. Example 2 handles the case where motion is genuinely required, with a 5-second cutoff and a user control. Most readers are done before the harder example appears.</p>
+</div>
+<div class="grid" style="--cols:260px 1fr;--gap:32px;padding:22px 0;border-top:1px solid var(--color-divider)">
+<h3 style="font-size:20px;margin:0">Error code beside fixed code</h3>
+<p style="font-size:16px;line-height:1.65;margin:0;text-wrap:pretty">Both examples show the broken version and the corrected version together, so a reader can pattern-match against their own codebase instead of parsing prose and translating it back into markup.</p>
+</div>
+<div class="grid" style="--cols:260px 1fr;--gap:32px;padding:22px 0;border-top:1px solid var(--color-divider)">
+<h3 style="font-size:20px;margin:0">Write past the deprecated tag</h3>
+<p style="font-size:16px;line-height:1.65;margin:0;text-wrap:pretty">Most browsers no longer support the blink tag, so a guide written only about it would read as legacy trivia. The principle generalizes: any motion lasting more than 5 seconds needs a pause, stop, or hide control. The guide names auto-playing banners as the current version of the same problem.</p>
+</div>
+<div class="grid" style="--cols:260px 1fr;--gap:32px;padding:22px 0;border-top:1px solid var(--color-divider)">
+<h3 style="font-size:20px;margin:0">Scaffold the next step</h3>
+<p style="font-size:16px;line-height:1.65;margin:0;text-wrap:pretty">Two exits at the end: a deeper piece on designing accessible animation for readers who want practice, and the WCAG 2.2 Understanding doc for readers who need the source. Neither is required to apply the fix.</p>
+</div>
+</div>
+</section>
+
+<section class="wrap" style="padding-bottom:56px">
+<figure class="blueprint" style="margin:0;padding:28px 30px">
+<i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+<figcaption class="mono" style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--color-accent-700);margin:0 0 18px">What the guide covers</figcaption>
+<table class="table" style="width:100%">
+<thead><tr><th style="width:32%">Section</th><th>What readers learn to do</th></tr></thead>
+<tbody>
+<tr><td>User impact</td><td>Recognize the three groups affected, and why screen reader users are the easiest to overlook.</td></tr>
+<tr><td>Screen reader demo</td><td>Hear what the page sounds like before and after the fix.</td></tr>
+<tr><td>Example 1 · Remove</td><td>Find blink in CSS and HTML, and delete the class. The right answer most of the time.</td></tr>
+<tr><td>Example 2 · Limit</td><td>When motion is required, stop it within 5 seconds and give the user a control to stop or hide it.</td></tr>
+<tr><td>Learn more</td><td>Apply the same rule to any animation lasting more than 5 seconds, and read SC 2.2.2 at the source.</td></tr>
+</tbody>
+</table>
+</figure>
+</section>
+
+<section class="wrap" style="padding-top:8px;padding-bottom:64px">
+<div class="blueprint" style="padding:24px 26px">
+<i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+<p class="mono" style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--color-accent-700);margin:0 0 12px">Skills</p>
+<div style="display:flex;flex-wrap:wrap;gap:8px">
+<span class="tag tag-accent">Accessibility</span><span class="tag tag-accent">Technical writing</span><span class="tag tag-accent">Assistive technology testing</span><span class="tag tag-neutral">Instructional design</span><span class="tag tag-neutral">Screen reader demo video</span><span class="tag tag-neutral">Developer documentation</span>
+</div>
+</div>
+</section>
+
+<nav style="border-top:1px solid var(--color-divider)">
+<div class="wrap" style="display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;padding-top:24px;padding-bottom:24px">
+<a class="btn btn-secondary" href="writing.html">← All writing</a>
+<a class="btn btn-secondary" href="https://app.pope.tech/result-documentation/articles/blinking-content" rel="noopener" target="_blank">Read the guide ↗</a>
+</div>
+</nav>
+</div>
+</body>
+</html>
